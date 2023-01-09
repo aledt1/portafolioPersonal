@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta http-equiv="last-modified" content="Wendsday, 23-Nov-16 17:04:00 GMT">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta name="author" content="Alexander-Delgado-Torres">
+  <meta name="keywords" content="portfolio, developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Delgado Torres | Desarrollador Java FullStack - Geocientífico</title>
+  <link rel="shortcut icon" href="./image/logo1.ico" type="image/x-icon">
+  <!--Estilo CSS bootstrap 5.2-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!--Estilo CSS personalizado-->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--Encabezado-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" id="menu">
+        <!--Nombre | inicio-->
+        <!--<p><span id="title">ALEXANDER DT</span></p>-->
+        <a class="navbar-brand" href="#">
+          <span id="title">ALEXANDER DT</span>
+        </a>
+        <!--Menú de hamburguesa | inicio-->
+        <button type="button" class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="botonMenu">
+          <span>MENU</span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!--Enlaces a cada sección | inicio-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><span class="menus">Inicio</span>></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="menus">Acerca de mí</span>></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="menus">Mi trabajo</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="menus">Contacto</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Contenido principal-->
+  <main>
+    <!--Home-->
+    <section class="containerSection1">
+      <div class="container-fluid containerMB" id="sobreMi">
+        <img src="./image/fotoprofe.png" class="img-fluid" alt="Imagen del desarrollador" id="fotoHome">
+        <h1>ALEXANDER DELGADO TORRES</h1>
+        <hr />
+        <h3>Desarrollador Full Stack - Geocientífico</h3>
+        <hr />
+        <h5 id="lemaTitulo">¿En que se parecen una roca y una computadora?</h5>
+        <p id="lema"><em>Ambas pueden registar y almacenar los datos de la Tierra y los sueños de las personas</em></p>
+      </div>
+    </section>
+    <!--Acerca de mi-->
+    <section class="containerSection2">
+      <div class="container-fluid containerMB">
+        <h1>Acerca de mi</h1>
+        <hr />
+        <div id="contenedorHijo">
+          <p>Hola, soy Alexander Delgado, Desarrollador Full Stack y Geocientífico. <br /> <br />
+            Soy un apasionado por el mundo geek, las Ciencias de la Tierra, el Desarrollo Web y las nuevas tecnologías.
+            He participado en varios proyectos para distintos emprendimientos web y de ciencia.<br /> <br />
+            Tengo conocimientos en desarrollo Front-End en HTML5, CSS3, JavaScript, Bootstrap y React.
+            También manejo el desarrollo Back-End en Java, bases de datos relacionales (MySQL), SpringBoot (Gradle) y
+            PHP.
+            <br /> <br />
+            Además soy especialista en Geofísica Aplicada de Métodos Eléctricos y manejo los Sistemas de Información
+            Geográfica
+            en cartografía digital. <br /><br />
+            Conoce más acerca de mi trabajo y bienvenidos a mi portal.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Mi trabajo-->
+    <section class="containerSection1">
+      <div class="container-fluid containerMB">
+        <h1>Mi trabajo</h1>
+        <hr />
+        <div id="containerCards">
+          <div class="card">
+            <i class="bi bi-cart4"></i>
+            <a href="#">
+              <h5>BGSPA</h5>
+            </a>
+          </div>
+          <div class="card">
+            <i class="bi bi-file-image"></i>
+            <a href="#">
+              <h5>Portal <br>Geopatrimonio</h5>
+            </a>
+          </div>
+          <div class="card">
+            <i class="bi bi-journal-text"></i>
+            <a href="#">
+              <h5>Artículo <br>Científico</h5>
+            </a>
+          </div>
+          <div class="card">
+            <i class="bi bi-folder2"></i>
+            <a href="#">
+              <h5>Otros</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--Contacto-->
+    <section class="containerSection2">
+      <div class="container-fluid containerMB">
+        <h1>Contáctame</h1>
+        <hr />
+        <div id="contenedorHijo">
+          <span class="alert alert-danger" role="alert" id="alertaError" style="display: none">Por favor revise que todos campos esten llenados correctamente</span>
+          <br/>
+          <form id="formulario">
+            <div class="mb-3">
+              <label for="nombreForm" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombreForm">
+              <p class="invalid-feedback">Verifique que el nombre contenga más de tres caracteres.</p>
+            </div>
+            <div class="mb-3">
+              <label for="correoForm" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correoForm">
+              <p class="invalid-feedback">Verifique que el correo sea correcto.</p>
+            </div>
+            <div class="mb-3">
+              <label for="numeroForm" class="form-label">Número telefónico</label>
+              <input type="tel" class="form-control" id="numeroForm">
+              <p class="invalid-feedback">Verifique que el número contenga diez caracteres.</p>
+            </div>
+            <div class="mb-3">
+              <label for="mensajeForm" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensajeForm" rows="3"></textarea>
+              <p class="invalid-feedback">Verifique que el mensaje contenga más de diez caracteres.</p>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!--Pie de página-->
+  <footer>
+    <section class="containerMBF">
+      <div id="localFooter">
+        <h5>LOCALIZACIÓN</h5>
+        <p>Tacámbaro Mich. México</p>
+      </div>
+      <div id="redesFooter">
+        <h5>MIS REDES</h5>
+        <div>
+          <span><i class="bi bi-whatsapp"></i></span>
+          <span><i class="bi bi-linkedin"></i></span>
+          <span><i class="bi bi-github"></i></span>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="containerF2">
+    <p>Créditos a startbootstrap.com por la guía de diseño | Desarrollado por Alexander Delgado | 2023</p>
+  </div>
+
+  <!--Scripts de Bootstrap 5.2-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/main.js"></script>
+  
+</body>
+
+</html>
