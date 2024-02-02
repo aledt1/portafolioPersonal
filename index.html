@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="es-MX">
-
-<head>
+<head> <!--Metadatos-->
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html">
-  <meta http-equiv="last-modified" content="Wendsday, 23-Nov-16 17:04:00 GMT">
+  <meta http-equiv="last-modified" content="Wendsday, 24-Ene-10 17:04:00 GMT">
   <meta http-equiv="cache-control" content="no-cache">
   <meta name="author" content="Alexander-Delgado-Torres">
   <meta name="keywords" content="portfolio, developer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alexander Delgado Torres | Desarrollador Java FullStack - Geocientífico</title>
+  <title>Alexander Delgado Torres | Desarrollador Java FullStack - Geocientífico - Analista de Datos</title>
   <link rel="shortcut icon" href="./image/logo1.ico" type="image/x-icon">
   <!--Estilo CSS bootstrap 5.2-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,40 +16,42 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!--Estilo CSS personalizado-->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
   <!--Encabezado-->
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid" id="menu">
+      <div class="container-fluid" id="contenedorMenu"> <!--menu >> contenedorMenu -->
         <!--Nombre | inicio-->
-        <!--<p><span id="title">ALEXANDER DT</span></p>-->
-        <a class="navbar-brand" href="#">
-          <span id="title">ALEXANDER DT</span>
+        <a class="navbar-brand">
+          <span id="tituloMenu">ALEXANDER DT</span> <!--title >> tituloMenu -->
         </a>
+        <!--Nombre | final-->
         <!--Menú de hamburguesa | inicio-->
         <button type="button" class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="botonMenu">
-          <span>MENU</span>
+          <span>Menu</span>
           <span></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <!--Enlaces a cada sección | inicio-->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><span class="menus">Inicio</span>></a>
+              <a class="nav-link active" aria-current="page" href="#sobreMi"><span class="menus">Inicio</span>></a> <!--sobreMi >> inicioPagina -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="menus">Acerca de mí</span>></a>
+              <a class="nav-link" href="#acercaDeMi"><span class="menus">Acerca de mí</span>></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="menus">Mi trabajo</span></a>
+              <a class="nav-link" href="#miTrabajo"><span class="menus">Mi trabajo</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="menus">Contacto</span></a>
+              <a class="nav-link" href="#contacto"><span class="menus">Contacto</span></a>
             </li>
           </ul>
+          <!--Enlaces a cada sección | final-->
         </div>
       </div>
     </nav>
@@ -58,65 +59,62 @@
   <!--Contenido principal-->
   <main>
     <!--Home-->
-    <section class="containerSection1">
-      <div class="container-fluid containerMB" id="sobreMi">
+    <section class="contenedorPadre01"> <!--containerSection1 >> contenedorPadre01 -->
+      <div class="container-fluid contenedorHijo01" id="sobreMi"> <!--containerMB >> contenedorHijo01 -->
         <img src="./image/fotoprofe.png" class="img-fluid" alt="Imagen del desarrollador" id="fotoHome">
         <h1>ALEXANDER DELGADO TORRES</h1>
         <hr />
-        <h3>Desarrollador Full Stack - Geocientífico</h3>
-        <hr />
+        <h3>Desarrollador Full Stack - Geocientífico - Analista de datos</h3>
+        <hr /> <!--aumentar el tamaño de letra-->
         <h5 id="lemaTitulo">¿En que se parecen una roca y una computadora?</h5>
-        <p id="lema"><em>Ambas pueden registar y almacenar los datos de la Tierra y los sueños de las personas</em></p>
+        <p id="lema"><em>Una roca y una computadora pueden parecer muy diferentes, pero ambos son fuentes 
+          de información; uno guarda la historia del planeta y, el otro datos y archivos.
+          Sigamos reflexionando sobre nuestra relación con el mundo natural y 
+          el mundo artificial, y sobre el papel que jugamos en ambos.</em></p>
       </div>
     </section>
     <!--Acerca de mi-->
-    <section class="containerSection2">
-      <div class="container-fluid containerMB">
+    <section class="contenedorPadre02" id="acercaDeMi"> <!--containerSection2 >> contenedorPadre02 -->
+      <div class="container-fluid contenedorHijo01"> <!--containerMB >> contenedorHijo01 -->
         <h1>Acerca de mi</h1>
         <hr />
-        <div id="contenedorHijo">
-          <p>Hola, soy Alexander Delgado, Desarrollador Full Stack y Geocientífico. <br /> <br />
-            Soy un apasionado por el mundo geek, las Ciencias de la Tierra, el Desarrollo Web y las nuevas tecnologías.
-            He participado en varios proyectos para distintos emprendimientos web y de ciencia.<br /> <br />
-            Tengo conocimientos en desarrollo Front-End en HTML5, CSS3, JavaScript, Bootstrap y React.
-            También manejo el desarrollo Back-End en Java, bases de datos relacionales (MySQL), SpringBoot (Gradle) y
-            PHP.
-            <br /> <br />
-            Además soy especialista en Geofísica Aplicada de Métodos Eléctricos y manejo los Sistemas de Información
-            Geográfica
-            en cartografía digital. <br /><br />
-            Conoce más acerca de mi trabajo y bienvenidos a mi portal.
+        <div id="contenedorHijo02"> <!--contenedorHijo >> contenedorHijo02 -->
+          <p>
+            Mi formación profesional combina la programación y la ciencia. Tengo competencias técnicas en Desarrollo Web Front-End (HTML5, CSS3 y JavaScript), Back-End (Java y MySQL) y frameworks (Bootstrap y SpringBoot). <br/><br/>
+            También soy experto en Geofísica Aplicada de Métodos Eléctricos, como Tomografía de Resistividad Eléctrica y Potencial Espontaneo, tanto en el trabajo de campo (planificación y logística) como en el análisis de datos (modelos, mapas y geoestadística). 
+            Asimismo, domino los Sistemas de Información Geográfica y la cartografía digital. <br/><br/>
+            Me apasiona aprender sobre el funcionamiento de nuestro planeta, los sistemas informáticos y las nuevas tecnologías. Soy perseverante, adaptable y dispuesto a enfrentar nuevos desafíos que me hagan crecer profesionalmente.
           </p>
         </div>
       </div>
     </section>
     <!--Mi trabajo-->
-    <section class="containerSection1">
-      <div class="container-fluid containerMB">
+    <section class="contenedorPadre01" id="miTrabajo"> <!--containerSection1 >> contenedorPadre01 -->
+      <div class="container-fluid contenedorHijo01"> <!--containerMB >> contenedorHijo01 -->
         <h1>Mi trabajo</h1>
         <hr />
-        <div id="containerCards">
+        <div id="contenedorCards"> <!--containerCards >> contenedorCards -->
           <div class="card">
-            <i class="bi bi-cart4"></i>
-            <a href="#">
+            <a href="https://github.com/aledt1/bgspa-fullstack" rel="noopener noreferrer" target="_blank">
+              <i class="bi bi-cart4"></i>
               <h5>BGSPA</h5>
             </a>
           </div>
           <div class="card">
-            <i class="bi bi-file-image"></i>
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1tR8_h9G-BfKaOWSTAFhxo8LCs0kFB_iJ/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+              <i class="bi bi-file-image"></i>
               <h5>Portal <br>Geopatrimonio</h5>
             </a>
           </div>
           <div class="card">
-            <i class="bi bi-journal-text"></i>
-            <a href="#">
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL089270" rel="noopener noreferrer" target="_blank">
+              <i class="bi bi-journal-text"></i>
               <h5>Artículo <br>Científico</h5>
             </a>
           </div>
           <div class="card">
-            <i class="bi bi-folder2"></i>
-            <a href="#">
+            <a href="#" rel="noopener noreferrer" target="_blank">
+              <i class="bi bi-folder2"></i>
               <h5>Otros</h5>
             </a>
           </div>
@@ -125,18 +123,18 @@
 
     </section>
     <!--Contacto-->
-    <section class="containerSection2">
-      <div class="container-fluid containerMB">
+    <section class="contenedorPadre02" id="contacto"> <!--containerSection2 >> contenedorPadre02 -->
+      <div class="container-fluid contenedorHijo01"> <!--containerMB >> contenedorHijo01 -->
         <h1>Contáctame</h1>
         <hr />
-        <div id="contenedorHijo">
+        <div id="contenedorHijo02"> <!--contenedorHijo >> contenedorHijo02 -->
           <span class="alert alert-danger" role="alert" id="alertaError" style="display: none">Por favor revise que todos campos esten llenados correctamente</span>
           <br/>
           <form id="formulario">
             <div class="mb-3">
               <label for="nombreForm" class="form-label">Nombre completo</label>
               <input type="text" class="form-control" id="nombreForm">
-              <p class="invalid-feedback">Verifique que el nombre contenga más de tres caracteres.</p>
+              <p class="invalid-feedback">Verifique que su nombre sea correcto.</p>
             </div>
             <div class="mb-3">
               <label for="correoForm" class="form-label">Correo electrónico</label>
@@ -157,36 +155,36 @@
           </form>
         </div>
       </div>
-
     </section>
   </main>
   <!--Pie de página-->
   <footer>
-    <section class="containerMBF">
-      <div id="localFooter">
+    <section class="contenedorFooter01"> <!--containerMBF >> contenedorFooter01 -->
+      <div>
         <h5>LOCALIZACIÓN</h5>
-        <p>Tacámbaro Mich. México</p>
+        <p>Morelia Mich. México</p>
       </div>
       <div id="redesFooter">
         <h5>MIS REDES</h5>
         <div>
-          <span><i class="bi bi-whatsapp"></i></span>
-          <span><i class="bi bi-linkedin"></i></span>
-          <span><i class="bi bi-github"></i></span>
+          <span><a href="https://api.whatsapp.com/send/?phone=4591073256" rel="noopener noreferrer" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/aledt/" rel="noopener noreferrer" target="_blank"><i class="bi bi-linkedin"></i></a></span>
+          <span><a href="https://github.com/aledt1" rel="noopener noreferrer" target="_blank"><i class="bi bi-github"></i></a></span>
         </div>
       </div>
     </section>
   </footer>
-  <div class="containerF2">
-    <p>Créditos a startbootstrap.com por la guía de diseño | Desarrollado por Alexander Delgado | 2023</p>
+  <div class="contenedorFooter02"> <!--containerF2 >> contenedorFooter02 -->
+    <p>Créditos a startbootstrap.com por la guía de diseño | Desarrollado por Alexander Delgado | 2024</p>
   </div>
 
   <!--Scripts de Bootstrap 5.2-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <!--Scripts externos-->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="./js/main.js"></script>
   
 </body>

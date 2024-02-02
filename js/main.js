@@ -1,32 +1,36 @@
 // Variables globales
 var boton = document.getElementById("btnEnviar");
-var nombre = document.getElementById("nombreForm");
+let nombre = document.getElementById("nombreForm");
 var correo = document.getElementById("correoForm");
-var telefono = document.getElementById("numeroForm");
-var mensaje = document.getElementById("mensajeForm");
+let telefono = document.getElementById("numeroForm");
+let mensaje = document.getElementById("mensajeForm");
 var formulario = document.getElementById("formulario");
 var alertaError = document.getElementById("alertaError");
 
 //evento para la validación de los campos del formulario
 boton.addEventListener("click", function(event){
     event.preventDefault();
+  
 
-    //constante flag para verificar
+   //constante flag para verificar
     const flag = {
         nombre: false,
         correo: false,
-        telefono: false,
-        mensaje: false
+        //telefono: false,
+        //mensaje: false
     }
 
     //validacion nombre
-    //nombre.classList.remove("is-invalid");
-    //nombre.classList.add("is-valid");
+    nombre.classList.remove("is-invalid");
+    nombre.classList.add("is-valid");
 
-    if ((nombre.value.length >= 3) && (nombre.value.length <30) && (nombre.value.trim() == "") && (nombre.value[0] != " ")){
+    if ((nombre.value.length >= 3) && (nombre.value.length < 30) && (nombre.value.trim() == "") && (nombre.value[0] != " ")){
+        nombre.classList.remove("is-invalid");
         nombre.classList.add("is-valid");
         flag.nombre = true;
+        console.log("si jalo este evento");
     } else {
+        nombre.classList.remove("is-valid");
         nombre.classList.add("is-invalid");
         flag.nombre = false;
     }
@@ -42,7 +46,7 @@ boton.addEventListener("click", function(event){
         (nombre.value.toUpperCase().charCodeAt(i) != 209)){
             nombre.classList.remove("is-valid");
             nombre.classList.add("is-invalid");
-            flag.nombre = false;
+            flag.nombre = true;
             break;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         }
     }
@@ -64,6 +68,7 @@ boton.addEventListener("click", function(event){
 
     validarCorreo(correo.value);
 
+    /*
     //validacion telefono
     if ((telefono.value.length == 10) && 
     (!isNaN(telefono.value)) && 
@@ -121,14 +126,18 @@ boton.addEventListener("click", function(event){
         enviarCorreo();
         //CORREO_ENVIADO();
 
+        */
+
         //reseteo del formulario
         formulario.reset();
         nombre.classList.remove("is-valid");
         correo.classList.remove("is-valid");
-        telefono.classList.remove("is-valid");
-        mensaje.classList.remove("is-valid");
-    } else {
+       // telefono.classList.remove("is-valid");
+        //mensaje.classList.remove("is-valid");
+    //} else {
         //CORREO_NO_ENVIADO();
+
+        /*
         alertaError.style.display = "block";
         setTimeout(() => {
             alertaError.style.display = "none"
@@ -166,4 +175,8 @@ const CORREO_NO_ENVIADO = () =>{
         showConfirmButton: true,
         showCloseButton: true,
       }); 
-};
+      */
+}); 
+
+
+
