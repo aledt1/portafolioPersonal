@@ -126,7 +126,7 @@ div#contenedorCards i{
     box-shadow: 0 0 0 0.25rem #7590ad !important;
 }
 
-footer{background-color: #19100e;}git
+footer{background-color: #19100e;}
 
 section.contenedorFooter01 h5{
     font-weight: 700;
@@ -167,6 +167,19 @@ div.contenedorFooter02{
 
 .card a:hover{
     color: #7590ad;
+}
+
+#btnEnviar:hover{
+    color: #e6e8ef;
+    background-color: #19100e;
+    border-color: #7590ad;
+    border-width: 3px;
+}
+
+#botonMenu:hover{
+    background-color: #19100e;
+    border-color: #e6e8ef; 
+    border-width: 3px;
 }
 /*--------------------Estilos CSS para distintas vistas de dispositivos-----------------------*/
 
@@ -434,12 +447,12 @@ div.contenedorFooter02{
 @media (min-width: 1200px){
     .contenedorHijo01{
         margin: 0;
-        padding: 50px 300px;
+        padding: 50px 500px;
         display: block;
         
     }
     #contenedorHijo02{
-        padding: 0px 100px;
+        padding: 0px 0px;
     }
     #contenedorMenu {
         padding: 0px 300px;
