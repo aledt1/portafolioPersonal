@@ -12,33 +12,27 @@ header{
     left: 0;
     z-index: 5;
 }
-
 header nav{
     width: 100%;
     height: 100px;
     background-color: #19100e;
 }
-
 nav div{background-color: #19100e;}
-
-a span#title{
+a span#tituloMenu{
     color: #f9f9f9;
     font-weight: 700;
     font-size: 1.1em;
 }
-
 a span.menus{
     color: #f9f9f9;
     font-weight: 700;
     font-size: 1.05em;
 }
-
 button.btn{
     background-color: #7590ad;
     border: 2px solid #f9f9f9;
     border-radius: 10px;
 }
-
 button.navbar-toggler span {
     font-weight: 300;
     color: #f9f9f9;
@@ -46,24 +40,24 @@ button.navbar-toggler span {
 }
 
 /*estilo para los contenedores padre*/
-.containerSection1{background-color: #7590ad;}
+.contenedorPadre01{background-color: #7590ad;} /*contenedor padre numero 1*/
 
-.containerSection2{background-color: #e6e8ef;}
+.contenedorPadre02{background-color: #e6e8ef;} /*contenedor padre numero 2*/
 
-section.containerSection1 div h1{
+section.contenedorPadre01 div h1{ /* estilo general del titulo h1 en contenedor padre 1*/
     display: flex;
     justify-content: center;
     font-weight: 700;
     color: #e6e8ef;
     margin-bottom: 15px;
 }
-section.containerSection2 div h1{
+section.contenedorPadre02 div h1{ /* estilo general del titulo h1 en contenedor padre */
     display: flex;
     justify-content: center;
     font-weight: 700;
     color: #19100e;
 }
-section.containerSection1 div h3{
+section.contenedorPadre01 div h3{
     display: flex;
     justify-content: center;
     font-weight: 300;
@@ -71,14 +65,14 @@ section.containerSection1 div h3{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-section.containerSection1 hr{
+section.contenedorPadre01 hr{ /* estilo general del salto de linea h1 en contenedor padre 1*/
     border: 4px solid #e6e8ef;
     border-radius: 5px;
     width: 300px;
     height: 0px;
     margin: auto;
 }
-section.containerSection2 hr{
+section.contenedorPadre02 hr{ /* estilo general del salto de linea h1 en contenedor padre 2*/
     border: 4px solid #19100e;
     border-radius: 5px;
     width: 300px;
@@ -87,7 +81,7 @@ section.containerSection2 hr{
 }
 
 /*estilo elementos generales */
-.containerSection2 p{
+.contenedorPadre02 p{
     margin-top: 25px;
 }
 
@@ -102,7 +96,7 @@ section.containerSection2 hr{
 #lema{
     display: flex;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
     color: #e6e8ef;
     margin-top: 15px;
 }
@@ -112,7 +106,7 @@ section.containerSection2 hr{
     text-decoration: none;
 }
 
-div#containerCards i{
+div#contenedorCards i{
     font-size: 6em;
     text-align: center;
     color:#19100e;
@@ -132,14 +126,14 @@ div#containerCards i{
     box-shadow: 0 0 0 0.25rem #7590ad !important;
 }
 
-footer{background-color: #19100e;}
+footer{background-color: #19100e;}git
 
-section.containerMBF h5{
+section.contenedorFooter01 h5{
     font-weight: 700;
     text-align: center;
 }
 
-section.containerMBF p{text-align: center;}
+section.contenedorFooter01 p{text-align: center;}
 
 #redesFooter{
     display: flex;
@@ -147,12 +141,12 @@ section.containerMBF p{text-align: center;}
     align-items: center;
 }
 
-div.containerF2{
+div.contenedorFooter02{
     background-color: #110d0c;
     padding: 20px 0 20px 0;
 
 }
-.containerF2 p{
+.contenedorFooter02 p{
     font-size: 12px;
     font-weight: 300;
     color: #e6e8ef;
@@ -160,15 +154,25 @@ div.containerF2{
     margin: 0;
 }
 
-#contenedorHijo{
+#contenedorHijo02{
     margin-top: 15px;
 }
+#redesFooter a{
+    color: #e6e8ef;
+}
 
+#redesFooter a:hover {
+    color: #7590ad;
+}
+
+.card a:hover{
+    color: #7590ad;
+}
 /*--------------------Estilos CSS para distintas vistas de dispositivos-----------------------*/
 
 /*Vistas móvil */
 @media (max-width: 575px){
-    .containerMB{
+    .contenedorHijo01{
         margin: 0px;
         padding: 25px;
         width: 100%;
@@ -177,7 +181,7 @@ div.containerF2{
         align-content: center;
         flex-direction: column;
     }
-    #menu{
+    #contenedorMenu{
         padding: 0px 25px;
     }
     #fotoHome{
@@ -188,7 +192,7 @@ div.containerF2{
         width: 300px;
         height: auto;
     }
-    .containerMBF{
+    .contenedorFooter01{
         margin: 0px;
         padding-top: 25px;
         padding-bottom: 15px;
@@ -197,16 +201,16 @@ div.containerF2{
         flex-direction: column;
     }
 
-    section.containerSection1 div h1{
+    section.contenedorPadre01 div h1{
         text-align: center;
     }
-    section.containerSection2 div h1{
+    section.contenedorPadre02 div h1{
         text-align: center;
     }
-    section.containerSection1 div h3{
+    section.contenedorPadre01 div h3{
         text-align: center;
     }
-    .containerSection2 p{
+    .contenedorPadre02 p{
         margin-top: 25px;
         text-align: justify;
     }
@@ -214,7 +218,7 @@ div.containerF2{
     #lemaTitulo, #lema{
         text-align: center;
     }
-    #containerCards{
+    #contenedorCards{
         margin-top: 25px;
         display: flex;
         flex-wrap: wrap;
@@ -229,10 +233,20 @@ div.containerF2{
         border: none;
         border-radius: 10px;
     }
+    #redesFooter div .bi{
+        font-size: 1.6em;
+        padding: 10px;
+    }
+    nav a span.menus{
+        font-size: 1.1em;
+    }
+    nav a span#tituloMenu{
+        font-size: 1.1em;
+    }
 }
 
 @media (min-width: 576px){
-    .containerMB{
+    .contenedorHijo01{
         margin: 0px;
         padding: 25px;
         width: 100%;
@@ -241,7 +255,7 @@ div.containerF2{
         align-content: center;
         flex-direction: column;
     }
-    #menu{
+    #contenedorMenu {
         padding: 0px 25px;
     }
     #fotoHome{
@@ -252,7 +266,7 @@ div.containerF2{
         width: 300px;
         height: auto;
     }
-    .containerMBF{
+    .contenedorFooter01{
         margin: 0px;
         padding-top: 25px;
         padding-bottom: 15px;
@@ -261,16 +275,16 @@ div.containerF2{
         justify-content: space-around;
     }
 
-    section.containerSection1 div h1{
+    section.contenedorPadre01 div h1{
         text-align: center;
     }
-    section.containerSection2 div h1{
+    section.contenedorPadre02 div h1{
         text-align: center;
     }
-    section.containerSection1 div h3{
+    section.contenedorPadre01 div h3{
         text-align: center;
     }
-    .containerSection2 p{
+    .contenedorPadre02 p{
         margin-top: 25px;
         text-align: justify;
     }
@@ -278,7 +292,7 @@ div.containerF2{
     #lemaTitulo, #lema{
         text-align: center;
     }
-    #containerCards{
+    #contenedorCards{
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
@@ -291,18 +305,28 @@ div.containerF2{
         border: none;
         border-radius: 10px;
     }
+    #redesFooter div .bi{
+        font-size: 1.8em;
+        padding: 10px;
+    }
+    nav a span.menus{
+        font-size: 1.15em;
+    }
+    nav a span#tituloMenu{
+        font-size: 1.15em;
+    }
 
 }
 /* Vistas Tablet */
 @media (min-width: 768px){
-    .containerMB{
+    .contenedorHijo01{
         margin: 0px;
         padding: 40px 100px;
         display: flex;
         flex-direction: column;
     }
 
-    #menu{
+    #contenedorMenu {
         padding: 0px 150px;
     }
     .navbar{
@@ -316,7 +340,7 @@ div.containerF2{
         width: 330px;
         height: auto;
     }
-    .containerMBF{
+    .contenedorFooter01{
         margin: 0px;
         padding-top: 50px;
         padding-bottom: 25px;
@@ -324,7 +348,7 @@ div.containerF2{
         display: flex;
         justify-content: space-around;
     }
-    #containerCards{
+    #contenedorCards{
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
@@ -336,17 +360,27 @@ div.containerF2{
         border: none;
         border-radius: 10px;
     }
+    #redesFooter div .bi{
+        font-size: 2em;
+        padding: 10px;
+    }
+    nav a span.menus{
+        font-size: 1.2em;
+    }
+    nav a span#tituloMenu{
+        font-size: 1.2em;
+    }
 
 }
 
 @media (min-width: 992px){
-    .containerMB{
+    .contenedorHijo01{
         margin: 0px;
         padding: 50px 150px;
         display: block;
         
     }
-    #menu{
+    #contenedorMenu {
         padding: 0px 200px;
         
     }
@@ -363,7 +397,7 @@ div.containerF2{
         width: 300px;
         height: auto;
     }
-    .containerMBF{
+    .contenedorFooter01{
         margin: 0px;
         padding-top: 50px;
         padding-bottom: 25px;
@@ -371,7 +405,7 @@ div.containerF2{
         display: flex;
         justify-content: space-around;
     }
-    #containerCards{
+    #contenedorCards{
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
@@ -383,21 +417,31 @@ div.containerF2{
         border: none;
         border-radius: 10px;
     }
+    #redesFooter div .bi{
+        font-size: 2.2em;
+        padding: 10px;
+    }
+    nav a span.menus{
+        font-size: 1.2em;
+    }
+    nav a span#tituloMenu{
+        font-size: 1.2em;
+    }
 
 }
 
 /* Vista Desktop */
 @media (min-width: 1200px){
-    .containerMB{
+    .contenedorHijo01{
         margin: 0;
         padding: 50px 300px;
         display: block;
         
     }
-    #contenedorHijo{
+    #contenedorHijo02{
         padding: 0px 100px;
     }
-    #menu{
+    #contenedorMenu {
         padding: 0px 300px;
         
     }
@@ -413,7 +457,7 @@ div.containerF2{
         width: 330px;
         height: auto;
     }
-    .containerMBF{
+    .contenedorFooter01{
         margin: 0px;
         padding-top: 50px;
         padding-bottom: 25px;
@@ -421,7 +465,7 @@ div.containerF2{
         display: flex;
         justify-content: space-around;
     }
-    #containerCards{
+    #contenedorCards{
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
@@ -433,4 +477,22 @@ div.containerF2{
         border: none;
         border-radius: 10px;
     }
+
+    #redesFooter div .bi{
+        font-size: 2.4em;
+        padding: 10px;
+    }
+
+
+    h5, nav a span.menus{
+        font-size: 1.35em;
+    }
+    nav a span#tituloMenu{
+        font-size: 1.35em;
+    }
+
+    #lema{
+        font-size: 1.2em;
+    }
+
 }
