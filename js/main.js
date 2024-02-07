@@ -109,7 +109,7 @@ mediante el uso de expresiones regulares usadas para correo */
 //Alerta general
     if (flag.nombre && flag.correo && flag.telefono && flag.mensaje){
         function envioCorreo(){
-            let plantillaCorreo = '¡Hola!, soy ' + nombre.value + 
+            let plantillaCorreo = '¡Hola!, soy ' + nombre.value + '<br/>' +
             'Me gustaría saber más sobre tu trabajo. <br/><br/>' +
             '<strong>Datos del cliente</strong> <br/>' +
             'Correo electrónico: ' + correo.value +
